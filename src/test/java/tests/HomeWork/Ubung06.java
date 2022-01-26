@@ -14,13 +14,7 @@ import java.time.Duration;
 
 public class Ubung06 {
 
-     //  //● https://the-internet.herokuapp.com/windows adresine gidin.
-    //  //● Sayfadaki textin “Opening a new window” olduğunu doğrulayın.
-    //  //● Sayfa başlığının(title) “The Internet” olduğunu doğrulayın.
-    //  //● Click Here butonuna basın.
-    //  //● Acilan yeni pencerenin sayfa başlığının (title) “New Window” oldugunu dogrulayin.
-    // //● Sayfadaki textin “New Window” olduğunu doğrulayın.
-    // //● Bir önceki pencereye geri döndükten sonra sayfa başlığının “The Internet” olduğunu doğrulayın.
+
      WebDriver driver;
 
     @BeforeMethod
@@ -51,6 +45,7 @@ public class Ubung06 {
         String actualText=driver.findElement(By.xpath("//h3[normalize-space()='New Window']")).getText();
         String expectedText="New Window";
         Assert.assertEquals(actualText,expectedText);
+
         // //● Bir önceki pencereye geri döndükten sonra sayfa başlığının “The Internet” olduğunu doğrulayın.
         driver.navigate().back(); //Does not return to previous window.Stays where it is.
         String actualTitleNewWindow=driver.getTitle();
