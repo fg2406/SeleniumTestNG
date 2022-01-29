@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class C01 {
+public class C01_Allerts {
 
 
 

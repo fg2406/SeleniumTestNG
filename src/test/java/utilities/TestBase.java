@@ -6,10 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
+import utilities.TestBase;
 import java.time.Duration;
 
-public class TestBase {
+ public abstract class TestBase {
 
 
     protected   WebDriver driver;
@@ -28,7 +28,7 @@ public class TestBase {
 
     @AfterClass
     public  void  tearDown(){
-        driver.close();
+       // driver.close();
    }
 
 
