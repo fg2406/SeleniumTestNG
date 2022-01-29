@@ -65,7 +65,7 @@ public class C03_IframeTest {
     @AfterClass
     public  void teardown(){
 
-        //driver.quit();
+        driver.quit();
     }
 
 

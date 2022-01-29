@@ -33,7 +33,7 @@ public class C02_WindowsHandle {
 
 
    @Test
-    public  void  test1(){
+    public  void  test1() throws InterruptedException {
 
         //● Tests package’inda yeni bir class olusturun: WindowHandle2
     //● https://the-internet.herokuapp.com/windows adresine gidin.
@@ -73,6 +73,7 @@ public class C02_WindowsHandle {
        System.out.println(handleDegerleri2);
 
          //yeni sayafaya gecis yapabilirim
+       Thread.sleep(5000);
        driver.switchTo().window(handleDegerleri2);
 
        //● Sayfadaki textin “New Window” olduğunu doğrulayın.
@@ -85,6 +86,7 @@ public class C02_WindowsHandle {
 
 
         //● Bir önceki pencereye geri döndükten sonra sayfa başlığının “The Internet” olduğunu doğrulayın.
+       Thread.sleep(5000);
        driver.switchTo().window(windowHandleDegeri1);
        Assert.assertEquals(driver.getTitle(),"The Internet");
 

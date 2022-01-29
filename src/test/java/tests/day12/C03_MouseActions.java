@@ -28,16 +28,20 @@ public class C03_MouseActions extends TestBase {
             Actions actions=new Actions(driver);
             WebElement ciziliAlanElementi= driver.findElement(By.id("hot-spot"));
             actions.contextClick(ciziliAlanElementi).perform();
+
             //4- Alert’te cikan yazinin “You selected a context menu” oldugunu
             //    test edelim.
             String expectedYazi="You selected a context menu";
             String actualYazi=driver.switchTo().alert().getText();
             Assert.assertEquals(actualYazi,expectedYazi);
+
             //5- Tamam diyerek alert’i kapatalim
             driver.switchTo().alert().accept();
+
             //6- Elemental Selenium linkine tiklayalim
             String ilkSayfaHandleDegeri=driver.getWindowHandle();
             driver.findElement(By.xpath("//a[text()='Elemental Selenium']")).click();
+
             //7- Acilan sayfada h1 taginda “Elemental Selenium” yazdigini test edelim
             String ikinciSayfaHandleDegeri="";
             Set<String> handleSeti= driver.getWindowHandles();
