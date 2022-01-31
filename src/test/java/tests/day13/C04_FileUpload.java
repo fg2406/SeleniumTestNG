@@ -16,10 +16,10 @@ public class C04_FileUpload extends TestBase {
         driver.get("https://the-internet.herokuapp.com/upload");
         //chooseFile butonuna basalim
         //Yuklemek istediginiz dosyayi secelim.
-        // 1- File secme butonunu locate edelim
-        WebElement filesecButonu=driver.findElement(By.id("file-upload"));
+        // 1- File secme
+         WebElement filesecButonu=driver.findElement(By.id("file-upload"));
         // 2- yukleyecegimiz dosyanin dinamik path'ini hazirlayalim
-        String dosyaYolu= System.getProperty("user.home") + "\\Desktop\\Deneme\\selenium.xlsx";
+        String dosyaYolu= System.getProperty("user.home") + "\\OneDrive\\Masaüstü\\übungen.JPG";
         // 3- sendKeys( ) ile dinamik path'i dosya sec butonuna yollayalim
         filesecButonu.sendKeys(dosyaYolu);
         //Upload butonuna basalim.
