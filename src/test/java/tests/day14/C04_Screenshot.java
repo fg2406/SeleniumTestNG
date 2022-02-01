@@ -22,7 +22,7 @@ public class C04_Screenshot extends TestBase {
 
 
       //2.adim tum sayfanin screenshot 'ini almak icin bir File olustururuz ve dosya yolunu belirtiriz
-      File tumSayfaSS=new File("src/11^^^^^^^^^^^^^^^^^^^^^^^^^,tumSayfa.png");
+      File tumSayfaSS=new File("src/tumSayfa.png");
 
 
       //3.adim: olusturdugumuz file ile takescreenshot objesini iliskilendirelim
