@@ -41,7 +41,7 @@ public abstract class TestBase {
    public void  tumSayfaScreenshot() throws IOException {
        TakesScreenshot tss=(TakesScreenshot) driver;
        String tarih=new SimpleDateFormat("yyMMddhhmmss").format(new Date());//
-       File tumSayfa=new File("target/screenShot/tumSayfa"+tarih+".jpg");
+       File tumSayfa=new File("target/screenShot/tumSayfa"+tarih+".jpg"); //
        File geciciResim=tss.getScreenshotAs(OutputType.FILE);
        FileUtils.copyFile(geciciResim,tumSayfa);
    }

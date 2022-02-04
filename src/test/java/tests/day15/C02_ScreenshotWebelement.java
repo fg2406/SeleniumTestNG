@@ -24,8 +24,8 @@ public class C02_ScreenshotWebelement extends  TestBase {
         String sonucSayisiStr = sonucYazisiElementi.getText();
         Assert.assertTrue(sonucSayisiStr.contains("Nutella"));
         // testin calistiginin ispati icin sonuc yazisi Ebelementinin screenshot'ini alalim
-        // tum sayfa screenshot icin 4 adim gerekli
-        File webelementSS = new File("target/screenschot/webelement");
+        // tum sayfa screenshot icin 4 adim gerekli,webElement icin 3 adim yeterli,Takescreenshot gerek yok
+        File webelementSS = new File("target/screenschot/webelement"); //sonuna .jpn falan yapmadik webelemet alt olarak kayit edilsin istedik
         File geciciSS = sonucYazisiElementi.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(geciciSS, webelementSS);
     }

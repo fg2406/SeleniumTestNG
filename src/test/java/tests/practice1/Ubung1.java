@@ -35,12 +35,7 @@ public class Ubung1 extends TestBase {
        driver.switchTo().alert().accept();
 
 
-       /* web sitesine gidin: https://www.jqueryscript.net/demo/bootstrap-alert-box/
-       // pencereyi büyüt
-       // eylem diyalog düğmesine tıklayın
-       // kullanmanız gerekiyorsa açıkça bekleyin
-       // tamam butonuna tıklayın
-       // iframe mesajını kabul et */
+
 
 
    }

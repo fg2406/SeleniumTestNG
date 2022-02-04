@@ -18,7 +18,7 @@ public class C03_ScreenShotKlasoru extends TestBase {
         @Test
         public void test01() throws IOException {
             driver.get("https://www.amazon.com");
-            aramaKutusu=driver.findElement(By.id("twotabsearchtextbox"));
+            aramaKutusu=driver.findElement(By.id("twotabsearchtextbox")); //mutlaka deger atamasi yapalim
             aramaKutusu.sendKeys("Java" + Keys.ENTER);
             tumSayfaScreenshot();
         }
@@ -35,6 +35,7 @@ public class C03_ScreenShotKlasoru extends TestBase {
             aramaKutusu.clear();
             aramaKutusu.sendKeys("elma" + Keys.ENTER);
             tumSayfaScreenshot();
+            driver.close();
         }
     }
 
