@@ -24,7 +24,8 @@ public class C02 extends TestBase {
             driver.switchTo().defaultContent();
             //      clicking on click here button
             String ilkSayfaHandle=driver.getWindowHandle();
-            driver.findElement(By.xpath("//a[text()='Click Here']")).click();
+           WebElement clickButton= driver.findElement(By.xpath("//a[text()='Click Here']"));
+           clickButton.click();
             //      get all the window in the set
             Set<String> tumHandles=driver.getWindowHandles();
             String ikinciHandle="";
